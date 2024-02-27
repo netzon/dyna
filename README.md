@@ -26,7 +26,7 @@ VITE_DYNAMICS_CRM_URL=https://org11111111.crm1.dynamics.com
 
 ## References
 
-- [Entites](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/reference/entitytypes?view=dataverse-latest)
+- [Entities](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/reference/entitytypes?view=dataverse-latest)
 - [Functions](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/reference/functions?view=dataverse-latest)
 
 # React + TypeScript + Vite
