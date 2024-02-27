@@ -1,8 +1,27 @@
 # Dynamics CRM Notes
 
-## Functions
+This is a demo repository for integrating a react front end with Dynamics CRM. The demo is intially based on the tutorial from [Tutorial: Register a Single-page application with the Microsoft identity platform](https://learn.microsoft.com/en-us/entra/identity-platform/tutorial-single-page-app-react-register-app) and an npm library [dynamics-web-api](https://www.npmjs.com/package/dynamics-web-api).
 
-https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/reference/functions?view=dataverse-latest
+## Environment Variables
+
+You need to have an `.env` file in the root of the project with the following variables:
+
+```env
+VITE_ENTRA_TENANT_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+VITE_ENTRA_REDIRECT_URI=http://localhost:3000
+VITE_ENTRA_CLIENT_ID==xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+VITE_DYNAMICS_CRM_URL=https://org11111111.crm1.dynamics.com
+```
+
+## Scopes
+
+- Make sure to set the scopes to `https://myresource.com/.default` as per [this SO comment](https://stackoverflow.com/questions/53552146/how-to-specify-resource-uri-when-acquiring-access-token-for-azure-ad-v2-endpoint/53552517#53552517).
+
+
+## References
+
+- [Entites](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/reference/entitytypes?view=dataverse-latest)
+- [Functions](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/reference/functions?view=dataverse-latest)
 
 # React + TypeScript + Vite
 
@@ -21,7 +40,6 @@ If you are developing a production application, we recommend updating the config
 
 ```js
 export default {
-  // other rules...
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
