@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { DynamicsWebApi } from 'dynamics-web-api';
-import { loginRequest } from "../authConfig";
 import { useMsal } from "@azure/msal-react";
 
 export const useDynamicsContacts = () => {
@@ -13,7 +12,7 @@ export const useDynamicsContacts = () => {
             serverUrl: serverUrl,
             onTokenRefresh: async () => {
                 const tokenContainer = await instance.acquireTokenSilent({
-                    ...loginRequest,
+                    scopes: [],
                     account: accounts[0],
                 });
                 return tokenContainer.accessToken;

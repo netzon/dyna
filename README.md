@@ -15,8 +15,14 @@ VITE_DYNAMICS_CRM_URL=https://org11111111.crm1.dynamics.com
 
 ## Scopes
 
-- Make sure to set the scopes to `https://myresource.com/.default` as per [this SO comment](https://stackoverflow.com/questions/53552146/how-to-specify-resource-uri-when-acquiring-access-token-for-azure-ad-v2-endpoint/53552517#53552517).
+- Scopes can now be empty but one should set the Enterprise Application permissions to the required scopes. 
+  - Dynamics 365 Business Central
+    - `Financials.ReadWrite.All`
+    - `user_impersonation`
+  - Dynamics CRM
+    - `user_impersonation`
 
+![Example setup of scopes](docs/readme-scopes.png?raw=true "Example setup of Scopes")
 
 ## References
 
